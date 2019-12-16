@@ -1,5 +1,4 @@
 # Sudoku Vision
-***
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![amity-university](https://img.shields.io/badge/Amity%20University-College%20Project-blue)](https://www.amity.edu/lucknow/)
 
