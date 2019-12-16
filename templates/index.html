@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sudoku Vision</title>
+	</head>
+<body>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style.css') }}">
+	<style>
+		/* Style the body */
+		body {
+			font-family: 'Courier New', Courier, monospace;
+			margin: 0;
+		}
+		
+		/* Header/Logo Title */
+		.header {
+			padding: 15px;
+			text-align: center;
+			background: black;
+		}
+		
+		/* Page Content */
+		.content {padding:20px;}
+		</style>
+		</head>
+		<body>
+		
+		<div class="header">
+			<img src = "{{ url_for('static', filename='Logo_1.png') }}" style="width: 250px;padding: 5px;"/>
+		</div>
+		</body>
+	<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+		<div style ="margin-top:15px; text-align: center;">
+		      <p><h4><span style="color:black; font-family: 'Courier New', Courier, monospace;font-size: large;"> Upload image of Sudoku puzzle below </span></h4></p>
+		</div>
+    <div id = a , style="margin-top:45px; text-align: center;">
+			<input type=file name = photo accept="image/*" onchange="loadFile(event)">
+			<center><img id="output" align = middle STYLE="TOP:260px;WIDTH:350px; HEIGHT:350px"/></center>
+      <script>
+        var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+        };
+     </script>
+		</div>
+
+	
+	<center>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style.css') }}">
+		<input type="submit" value="Solve Puzzle">
+	</center>
+	
+</form>
+</body>
+<style>
+		.footer {
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  background-color:black;
+		  color: white;
+		  font-family:'Courier New', Courier, monospace;
+		  text-align: center;
+		}
+		</style>
+		
+		<div class="footer">
+		  <p>Made with 	&#x1F9E1; by <a href="https://www.linkedin.com/in/ashumaths1729">Ashutosh Agrahari</a></p>
+		  <p>A Minor Project</p>
+		</div>
+</html>
