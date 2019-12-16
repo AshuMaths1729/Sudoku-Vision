@@ -29,3 +29,8 @@ python app.py
 Copy the URL such as **127.0.0.1:5000** and paste into the browser.
 
 Upload and solve the puzzle.
+
+**References**
+1. Detection of Sudoku puzzle using image processing and solving by Backtracking, Simulated Annealing and Genetic Algorithms: A comparative analysis. https://doi.org/10.1109/ICIIP.2015.7414762
+2. https://stackschool.io/quick-image-classifier-web-application-with-flask-keras-and-bokeh/
+3. https://caphuuquan.blogspot.com/2017/08/building-simple-sudoku-solver-from.html 
